@@ -9,7 +9,6 @@
 
     <body>
         <nav>
-            <h1>Jaime Marquez</h1>
             <ul>
                 <li><a>About Me</a></li>
                 <li><a>Projects</a></li>
@@ -18,34 +17,71 @@
             </ul>
         </nav>
 
-            <main>
-                <section id="about-me">
-                    <div id="about-me-container">
-                        <div id="about-me-image-container">
-                            <img src="./resources/images/jaime.jpg" alt="photo of Jaime Marquez"/>
+        <main>
+            <h1>Jaime Marquez</h1>
+            
+            <div class="column" id="column-left">
+                <div class="row" id="image-container">
+                    <img src="./resources/images/jaime.jpg" alt="photo of Jaime Marquez"/>
+                </div>
+            
+                <div class="row" id="contact-container">
+                    <h3>Contacting Jaime</h3>
+                    <ul>
+                        <li>Email</li>
+                        <li>LinkedIn</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+
+                <div id="skills-container">
+                    <h3>Jaime's Skills</h3>
+
+                    <div class="row" id="skills-row-networking">
+                        <div class="column" id="skills-networking-left">
+                            <strong>Networking</strong>
                         </div>
-                        <h2>About Me</h2>
+                        <div class="column" id="skills-networking-right">
                             <p>
-                                
+                                Routing, switching, Cisco routers, Cisco switches, 
+                                Wireless LAN Controllers (WLC), Wireless Access Points (WAP), 
+                                and DHCP.
                             </p>
+                        </div>
                     </div>
-                </section>
 
-                <section id="projects">
-                    <h2>Projects</h2>
-                </section>
+                    <div class="row" id="skills-row-development">
+                        <div class="column" id="skills-development-left">
+                            <strong>Development</strong>
+                        </div>
+                        <div class="column" id="skills-development-right">
+                            <p>
+                                Python, JavaScript, HTML5, and CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <section id="skills">
-                    <h2>Skills</h2>
-                </section>
+            <div class="column" id="column-right">
+                <div class="row" id="about-me-container">
+                    <h3>About me:</h3>
+                    <p>
+                        Hi! I'm Jaime Marquez and I've had a passion for all thing technology since adolescence.
+                        Ever since my parents purchased our first PC for the family, I taught myself to become a 
+                        so-called "power user."
+                    </p>
+                </div>
 
-                <section id="contact">
-                    <h2>Contact</h2>
-                </section>
-            </main>
+                <div class="row" id="projects-container">
+                    <h3>Jaime's projects:</h3>
+                    
+                </div>
+            </div>
+        </main>
 
-            <footer>
+        <footer>
 
-            </footer>
+        </footer>
     </body>
 </html>
