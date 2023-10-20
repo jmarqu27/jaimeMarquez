@@ -3,30 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="./resources/styles.css">
+        <link rel="stylesheet" href="./resources/css/styles.css">
         <link rel="self image" href="./resources/images/IMG_1330.jpg" type="image">
     </head>
 
     <body>
         <nav>
-            <ul>
-                <li><a>About Me</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Skills</a></li>
-                <li><a>Contact</a></li>
+            <ul class="navigation-items">
+                <li class="navigation-item"><a href="#about-me-container">About Me</a></li>
+                <li class="navigation-item"><a href="#contact-container">Contact</a></li>
+                <li class="navigation-item"><a href="#skills-container">Skills</a></li>
+                <li class="navigation-item"><a href="#projects-container">Projects</a></li>
             </ul>
         </nav>
 
         <main>
             <h1>Jaime Marquez</h1>
+            <div class="grid-container">
+                <div class="grid-column" id="column-left">
+                    <div class="grid-item" id="image-container">
+                        <img src="./resources/images/jaime.jpg" alt="photo of Jaime Marquez" class="portfolio-picture"/>
+                    </div>
+    
+                    <div class="grid-item" id="contact-container">
+                        <h3 id="contact-title">Contacting Jaime</h3>
+                        <ul class="contact-list">
+                            <li>Email</li>
+                            <li>LinkedIn</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+    
+                    <div class="grid-item" id="skills-container">
+                        <h3>Jaime's Skills</h3>
+                        <div class="grid-skills-label">
+                            <h4>Networking</h4>
+                        </div>
+                        <div class="grid-skills-items">
+                            <p>
+                                Routing, switching, Cisco routers, Cisco switches, 
+                                Wireless LAN Controllers (WLC), Wireless Access Points (WAP), 
+                                and DHCP.
+                            </p>
+                        </div>
+                        <div class="grid-skills-label">
+                            <h4>Development</h4>
+                        </div>
+                        <div class="grid-skills-items">
+                            <p>
+                                Python, JavaScript, HTML5, and CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <divc lass="grid-column" id="column-right">
+                    <div class="grid-item" id="about-me-container">
+                        <h3>About me:</h3>
+                        <p>
+                            Hi! I'm Jaime Marquez and I've had a passion for all thing technology since adolescence.
+                            Ever since my parents purchased our first PC for the family, I taught myself to become a 
+                            so-called "power user."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
             
-            <div class="column" id="column-left">
+            <!-- <div class="column" id="column-left">
                 <div class="row" id="image-container">
-                    <img src="./resources/images/jaime.jpg" alt="photo of Jaime Marquez"/>
+                    <img src="./resources/images/jaime.jpg" alt="photo of Jaime Marquez" class="portfolio-picture"/>
                 </div>
             
                 <div class="row" id="contact-container">
-                    <h3>Contacting Jaime</h3>
+                    <h3 id="contact-title">Contacting Jaime</h3>
                     <ul>
                         <li>Email</li>
                         <li>LinkedIn</li>
@@ -75,13 +130,14 @@
 
                 <div class="row" id="projects-container">
                     <h3>Jaime's projects:</h3>
-                    
+                    <ul>
+                        <li>Message Generator - A page which displays a random "dad joke" with the click of a button</li>
+                        <li>Portfolio Website - A page for my personal portfolio</li>
+                    </ul>
                 </div>
-            </div>
+            </div> -->
         </main>
 
-        <footer>
-
-        </footer>
+        <footer>Last updated: October 2023</footer>
     </body>
 </html>
